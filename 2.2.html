@@ -1,16 +1,31 @@
 <html>
     <head>
         <style>
-             div{
-    	width:400px;
-    	height:220px;
-    	background: linear-gradient(to bottom, red,white,white,blue);
+body{margin:100px;}
+div.flag{
+		width: 640px;
+		height: 363px;
+		box-shadow: 0 0 5px 1px silver inset;
+		background:url(http://qualitylessons.net/ashokaChakra.jpg) center 49% no-repeat, linear-gradient(red 33%, white 33%,white 66%, blue 66%);
+		background-size: 110px 110px, auto;
+		position: relative;
+  
+ }
+
+ div.flag:after{
+ 	content: "";
+ 	position: absolute;
+ 	top:-10px;
+ 	border-radius: 15px 15px 0 0;
+ 	height: 800px;
+ 	width: 15px;
+ 	background: linear-gradient(to right,silver, grey)
+
+ }
  
         </style>
     </head>
     <body>
-        <div>
-
-        </div>
+<div class="flag"></div>
     </body>
 </html>
